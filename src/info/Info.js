@@ -65,34 +65,50 @@ export const info = {
         {
             title: "Personal Portfolio",
             live: "https://kayrobarbosa.netlify.app",
-            source: "https://github.com/kallismb/kayro-portfolio",
+            source: "https://github.com/kayro-barbosa/kayro-portfolio",
             image: mock1,
             description: "This is my personal portfolio, showcasing some of the projects I have worked on.",
-            technologies: ['JavaScript', 'React', 'SCSS']
+            technologies: ['JavaScript', 'React', 'HTML', 'SCSS']
         },
         {
             title: "Gastronomia & Clima",
             live: "#",
-            source: "https://github.com/kallismb/gastronomia-clima",
+            source: "https://github.com/kayro-barbosa/gastronomia-clima",
             image: mock2,
             description: "A web app using NodeJS and Supabase database.",
-            technologies: ['JavaScript', 'NodeJS', 'ExpressJS', 'Supabase', 'Docker', 'CSS']
+            technologies: ['JavaScript', 'NodeJS', 'ExpressJS', 'Supabase', 'Docker', 'HTML', 'CSS']
         },
         {
             title: "Stock App",
             live: "#",
-            source: "https://github.com/kallismb/stock-app",
+            source: "https://github.com/kayro-barbosa/stock-app",
             image: mock3,
             description: "A React app for tracking stock prices.",
-            technologies: ['JavaScript', 'React', 'CSS']
+            technologies: ['JavaScript', 'React', 'HTML', 'CSS']
         },
         {
             title: "Gestão Livraria",
             live: "#",
-            source: "https://github.com/kallismb/gestao-livraria",
+            source: "https://github.com/kayro-barbosa/gestao-livraria",
             image: mock4,
             description: "A C# .NET Console App for managing a library system.",
             technologies: ['C#']
+        },
+        {
+            title: "Strapi GitHub Integration",
+            live: "#",
+            source: "https://github.com/kayro-barbosa/github_strapi",
+            image: mock6,
+            description: "A Strapi backend project to fetch and manage GitHub repository data with Rocketchat integration.",
+            technologies: ['TypeScript', 'NodeJS', 'Strapi']
+        },
+        {
+            title: "Strapi GitHub Dashboard",
+            live: "#",
+            source: "https://github.com/kayro-barbosa/Strapi-Github-Dashboard",
+            image: mock7,
+            description: "A web dashboard built with VueJS that displays GitHub repository data fetched from a Strapi backend.",
+            technologies: ['TypeScript', 'VueJS', 'HTML', 'CSS']
         },
         {
             title: "XP Academy",

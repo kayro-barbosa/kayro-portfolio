@@ -19,7 +19,8 @@ export default function Portfolio({ innerRef }) {
                             live={project.live} 
                             source={project.source} 
                             title={project.title} 
-                            description={project.description} 
+                            description={project.description}
+                            technologies={project.technologies}
                         />
                     </Grid>
                 ))}

@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { Box, Typography, Button } from '@mui/material';
+import { getTechIcon } from './iconMapping';
 
-function PortfolioBlock({ image, source, title, description }) {
+function PortfolioBlock({ image, source, title, description, technologies = [] }) {
     const [hover, setHover] = useState(false);
 
     return (
@@ -55,6 +56,46 @@ function PortfolioBlock({ image, source, title, description }) {
                 <Typography color="#ffffff" textAlign="center" sx={{ px: 2, mb: 2 }}>
                     {description}
                 </Typography>
+                
+                {/* Technology Icons */}
+                {technologies.length > 0 && (
+                    <Box 
+                        sx={{ 
+                            display: 'flex', 
+                            gap: '1rem', 
+                            mb: 2,
+                            flexWrap: 'wrap',
+                            justifyContent: 'center',
+                            alignItems: 'center'
+                        }}
+                    >
+                        {technologies.map((tech, index) => {
+                            const IconComponent = getTechIcon(tech);
+                            return (
+                                <Box
+                                    key={index}
+                                    sx={{
+                                        display: 'flex',
+                                        alignItems: 'center',
+                                        transition: 'transform 0.2s ease',
+                                        '&:hover': {
+                                            transform: 'scale(1.2)'
+                                        }
+                                    }}
+                                    title={tech}
+                                >
+                                    <IconComponent 
+                                        style={{ 
+                                            fontSize: '1.5rem', 
+                                            color: '#00ffa4' 
+                                        }} 
+                                    />
+                                </Box>
+                            );
+                        })}
+                    </Box>
+                )}
+                
                 <Button 
                     variant="contained" 
                     href={source} 
